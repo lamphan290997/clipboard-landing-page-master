@@ -1,0 +1,252 @@
+/* reset css */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 400;
+}
+
+.attribution { font-size: 11px; text-align: center; margin: 15px; }
+.attribution a { color: hsl(228, 45%, 44%); }
+/* reset css */
+.desktop{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: -1;
+}
+
+.mobile{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: -1;
+}
+
+#content{
+    /* padding-top: 30px; */
+    text-align: center;
+}
+
+#content .download,
+#content .snip{
+    margin: 20px 90px 70px;
+}
+
+#content h1,
+#content h2,
+#content h3{
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+}
+
+#content p{
+    color: hsl(201, 11%, 66%);
+    margin-top: 20px;
+}
+
+#content .download a,
+#content .clipboard a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+#content .button-download{
+    margin-top: 50px;
+}
+
+#content .ios,
+#content .mac{
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: hsl(201, 11%, 66%) 1px 1px 10px;
+}
+
+#content .ios:hover,
+#content .mac:hover{
+    opacity: 0.8;
+}
+
+#content .ios{
+    background-color: hsl(171, 66%, 44%);   
+    border: hsl(171, 66%, 44%) 3px solid;
+}
+
+#content .mac{
+    background-color: hsl(233, 100%, 69%);
+    border: hsl(233, 100%, 69%) 3px solid;
+}
+
+#content .computer{
+    display: flex;
+    flex-direction: row;
+}
+
+#content .computer img{
+    width: 50%;
+}
+
+#content .function{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;
+}
+
+#content .function p{
+    width: 50%;
+    text-align: left;
+    margin: 10px 0px 20px;
+}
+
+#content .access{
+    margin: 50px 90px;
+}
+
+#content .access img{
+    margin: 25px 0px;
+    width: 50%;
+}
+
+#content .card{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 50px;
+    margin: 30px 30px 50px;
+}
+
+#content .card img{
+    margin-bottom: 10px;
+}
+
+#content .brand{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 70px 50px;
+}
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 70px;
+}
+
+#footer a{
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+}
+
+#footer .footer-contact a:hover,
+#footer .social a:hover{
+    opacity: 0.8;
+}
+
+#footer .logo{
+    width: 50px;
+}
+
+#footer .footer-contact{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 75px;
+    grid-row-gap: 20px;
+    margin: 30px 30px 50px;
+}
+
+#footer .social {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 10px;
+}
+
+/* mobile */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 375px) and (max-device-width : 740px) {
+.desktop{
+    display: none;
+}
+
+.mobile{
+    display: block;
+}
+
+#content{
+    margin: 20px;
+}
+
+#content .download,
+#content .snip{
+    margin: 20px 0px 70px;
+}
+
+#content .button-download{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#content .computer{
+    display: flex;
+    flex-direction: column;
+}
+
+#content .computer img,
+#content .access img{
+    width: 100%;
+}
+
+#content .function{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+#content .function p{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px 20px;
+}
+
+#content .access{
+    margin: 50px 0px;
+}
+
+#content .card,
+#content .brand{
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 50px;
+    margin: 30px 0px 50px;
+}
+
+#footer{
+    flex-direction: column;
+}
+
+#footer .footer-contact{
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    grid-row-gap: 20px;
+    margin: 30px 0px 50px;
+}
+}
+/* mobile */
